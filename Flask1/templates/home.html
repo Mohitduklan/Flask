@@ -1,0 +1,13 @@
+<html>
+    <head>
+        <title>Home Page</title>
+    </head>
+    <body>
+        <h1>Login Successfully</h1>
+        <h3>Welcome <span>{{ posts[0]['name'] }}!!!</span></h3> 
+        {% for post in posts %}
+            <p>{{ post['about'] }}</p>
+        {% endfor %}
+        {{posts[0]}}
+    </body>
+</html>
